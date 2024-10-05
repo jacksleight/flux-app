@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Sushi\Sushi;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Sushi\Sushi;
 
 class Member extends Model
 {

@@ -1,9 +1,10 @@
 <?php
 
-use Livewire\Attributes\Validate;
 use App\Models\Team;
+use Livewire\Attributes\Validate;
 
-new class extends \Livewire\Volt\Component {
+new class extends \Livewire\Volt\Component
+{
     public Team $team;
 
     #[Validate('string|required')]
@@ -32,7 +33,7 @@ new class extends \Livewire\Volt\Component {
             'role' => $this->role,
         ]);
 
-        $this->reset([ 'name', 'email', 'role' ]);
+        $this->reset(['name', 'email', 'role']);
 
         $this->modal('member-add')->close();
     }
@@ -42,7 +43,7 @@ new class extends \Livewire\Volt\Component {
 <div>
     <div class="flex justify-between items-center">
         <div>
-            <flux:heading>Team members</flux:heading>
+            <flux:heading size="lg">Team members</flux:heading>
             <flux:subheading>Manage your team members and their roles</flux:subheading>
         </div>
 

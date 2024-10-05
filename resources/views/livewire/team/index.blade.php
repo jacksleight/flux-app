@@ -1,9 +1,10 @@
 <?php
 
-use Livewire\Attributes\Url;
 use App\Models\Team;
+use Livewire\Attributes\Url;
 
-new class extends \Livewire\Volt\Component {
+new class extends \Livewire\Volt\Component
+{
     public Team $team;
 
     #[Url]
@@ -22,7 +23,7 @@ new class extends \Livewire\Volt\Component {
         <flux:subheading>Manage your team profile and members</flux:subheading>
     </div>
 
-    <flux:tab.group variant="flush" class="mt-8 max-w-lg">
+    <flux:tab.group variant="flush" class="mt-8">
         <flux:tabs wire:model="tab">
             <flux:tab name="profile">Profile</flux:tab>
             <flux:tab name="members">Members</flux:tab>

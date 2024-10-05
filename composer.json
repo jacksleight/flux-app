@@ -7,9 +7,11 @@
     "require": {
         "php": "^8.2",
         "calebporzio/sushi": "^2.5",
+        "gehrisandro/tailwind-merge-laravel": "^1.2",
+        "jacksleight/blade-tailor": "dev-main",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "livewire/flux-pro": "dev-main",
+        "livewire/flux-pro": "^1.0",
         "livewire/volt": "^1.6"
     },
     "require-dev": {
@@ -67,13 +69,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
-        "flux": {
-            "type": "path",
-            "url": "./../flux"
-        },
         "flux-pro": {
+            "type": "composer",
+            "url": "https://composer.fluxui.dev"
+        },
+        "blade-tailor": {
             "type": "path",
-            "url": "./../flux-pro"
+            "url": "../blade-tailor"
         }
     }
 }
