@@ -5,3 +5,7 @@
 *:has(>[data-flux-table]) {
     overflow-x: visible;
 }
+
+.text-shadow-glow {
+    text-shadow: 0 0 10px theme(colors.cyan.400);
+}

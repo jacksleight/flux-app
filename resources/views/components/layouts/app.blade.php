@@ -14,7 +14,7 @@
 
         @fluxStyles
     </head>
-    <body class="min-h-screen bg-white dark:bg-black antialiased p-24 gap-1">
+    <body class="min-h-screen bg-white dark:bg-black antialiased p-16 gap-1">
         <flux:header class="bg-zinc-50 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700">
             <flux:sidebar.toggle class="lg:hidden" icon="bars-2" />
 
@@ -47,7 +47,11 @@
 
         <flux:sidebar class="bg-zinc-50 dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-700">
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
-            <flux:input as="button" variant="filled" placeholder="Search..." icon="magnifying-glass" />
+            <flux:input as="button" variant="filled" placeholder="Search...">
+                <x-slot:icon-leading>
+                    <flux:icon name="magnifying-glass" variant="mini" />
+                </x-slot:icon-leading>
+            </flux:input>
 
             <flux:navlist variant="outline">
                 <flux:navlist.item icon="home" href="#">Home</flux:navlist.item>

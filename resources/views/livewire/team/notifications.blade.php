@@ -1,14 +1,18 @@
 <?php
 
-use Livewire\Attributes\Renderless;
 use App\Models\Team;
+use Livewire\Attributes\Renderless;
 
-new class extends \Livewire\Volt\Component {
+new class extends \Livewire\Volt\Component
+{
     public Team $team;
 
     public $communication = false;
+
     public $marketing = false;
+
     public $social = false;
+
     public $security = false;
 
     public function mount()
@@ -33,7 +37,7 @@ new class extends \Livewire\Volt\Component {
 ?>
 
 <div>
-    <flux:heading>Team notifications</flux:heading>
+    <flux:heading size="lg">Team notifications</flux:heading>
     <flux:subheading>Manage which notification features are enabled for your team</flux:subheading>
 
     <flux:card class="space-y-4 mt-8">

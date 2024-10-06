@@ -1,9 +1,10 @@
 <?php
 
-use Livewire\Attributes\Validate;
 use App\Models\Team;
+use Livewire\Attributes\Validate;
 
-new class extends \Livewire\Volt\Component {
+new class extends \Livewire\Volt\Component
+{
     public Team $team;
 
     #[Validate('required')]
@@ -32,7 +33,7 @@ new class extends \Livewire\Volt\Component {
 
 <form wire:submit="save" class="space-y-6">
     <div>
-        <flux:heading>Team profile</flux:heading>
+        <flux:heading size="lg">Team profile</flux:heading>
         <flux:subheading>You can update your team profile here</flux:subheading>
     </div>
 
